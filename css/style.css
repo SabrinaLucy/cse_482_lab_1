@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #263043;
+    background: #eef5ff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(38, 48, 67, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar a:not(.logo) {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: #2563eb;
+    color: white;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 24px;
+}
+
+.hero {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero-text h1,
+.page-hero h1,
+.travel-hero h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 10px 0 18px;
+    color: #111827;
+}
+
+.hero-text p,
+.page-hero p,
+.travel-hero p {
+    font-size: 17px;
+    max-width: 720px;
+}
+
+.small-title {
+    color: #f97316;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.hero-card,
+.info-box,
+.place-card,
+.destination-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(38, 48, 67, 0.09);
+}
+
+.hero-card {
+    padding: 28px;
+    border-top: 5px solid #f97316;
+}
+
+.hero-card h2,
+.info-box h2,
+.place-card h2 {
+    margin-bottom: 12px;
+    color: #2563eb;
+}
+
+.section-title {
+    text-align: center;
+    margin: 45px 0 24px;
+}
+
+.section-title p {
+    color: #f97316;
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 34px;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.destination-card {
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.destination-card:hover,
+.place-card:hover,
+.info-box:hover {
+    transform: translateY(-6px);
+}
+
+.destination-card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.destination-card div {
+    padding: 22px;
+}
+
+.destination-card h3 {
+    color: #111827;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.destination-card a {
+    display: inline-block;
+    margin-top: 14px;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.page-hero,
+.travel-hero {
+    background: white;
+    border-radius: 18px;
+    padding: 38px;
+    box-shadow: 0 12px 30px rgba(38, 48, 67, 0.09);
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #ffffff, #dbeafe);
+}
+
+.info-grid,
+.travel-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 28px;
+}
+
+.info-box,
+.place-card {
+    padding: 24px;
+    transition: 0.3s ease;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.contact-info {
+    display: grid;
+    gap: 18px;
+}
+
+.contact-form {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(38, 48, 67, 0.09);
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #111827;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.contact-form button {
+    margin-top: 8px;
+    border: none;
+    padding: 12px 18px;
+    background: #2563eb;
+    color: white;
+    border-radius: 24px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.travel-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 28px;
+}
+
+.travel-hero.reverse img {
+    order: 2;
+}
+
+.travel-hero img {
+    height: 360px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 26px 24px;
+    background: #111827;
+    color: white;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #fed7aa;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero,
+    .travel-hero,
+    .destination-grid,
+    .info-grid,
+    .travel-cards,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .travel-hero.reverse img {
+        order: 0;
+    }
+
+    .hero-text h1,
+    .page-hero h1,
+    .travel-hero h1 {
+        font-size: 34px;
+    }
+
+    .travel-hero img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 28px 16px;
+    }
+
+    .navbar ul {
+        gap: 8px;
+    }
+
+    .navbar a:not(.logo) {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+
+    .hero-text h1,
+    .page-hero h1,
+    .travel-hero h1 {
+        font-size: 28px;
+    }
+
+    .page-hero,
+    .travel-hero {
+        padding: 24px;
+    }
+}
